@@ -1,0 +1,102 @@
+main {
+    width: 100%;
+}
+
+.profile-container {
+    width: 95%;
+    height: 500px;
+    margin: 3rem auto;
+    margin-top: 150px;
+    display: flex;
+}
+
+.profile-sidebar {
+    width: 20%;
+    height: 500px;
+    padding: 0 .5rem;
+}
+
+.profile-content {
+    width: 80%;
+    height: 500px;
+    padding: 0 .5rem;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.profile-title span:first-of-type {
+    font-size: 3rem;
+    color: gray;
+}
+
+.profile-title span:last-of-type {
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+
+.profile-sidebar-item a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #666;
+}
+
+.profile-sidebar-item a:hover {
+    color: #000;
+}
+
+.profile-sidebar-item {
+    padding: .7rem 0;
+    
+}
+
+.profile-sidebar-item a span:first-of-type {
+    margin-left: .5rem;
+}
+
+.profile-sidebar-items {
+    border-bottom: 1px solid gainsboro;
+}
+
+.btn-logout {
+    display: flex;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.btn-logout span:first-of-type {
+    margin-left: .5rem;
+}
+
+.btn-logout:hover {
+    color: #000;
+}
+
+.active-profile-item a{
+    color: #ff0095;
+}
+
+.profile-content-title {
+    margin-top: .5rem;
+    font-weight: 700;
+}
+
+.profile-content-text {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-content-text-right,
+.profile-content-text-left {
+    width: 49%;
+    height: 100px;
+    background-color: brown;
+}

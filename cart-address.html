@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید | فروشگاه اینترنتی لباس دیجی استایل</title>
+    <link rel="icon" href="assets/image/Favicon.png"/>
+
+    <!-- google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/css/uikit.min.css" />
+
+    <!-- suctom style -->
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/navigation.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="stylesheet" href="assets/style/cart.css">
+    <link rel="stylesheet" href="assets/style/cart-address.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
+</head>
+<body>
+    <header class="cart-address-header">
+        <a href="index.html"><img src="assets/image/logo.svg"></a>
+    </header>
+
+    <section class="submit-address">
+        <div class="submit-address-container">
+            <span class="material-icons close-submit-address">close</span>
+            <h1 class="submit-address-title"> افزودن آدرس جدید</h1>
+
+            <form class="">
+                <div class="national-Code">
+                    <div class="national-Code-container">
+                        <input id="national-Code" type="text" required>
+                        <label class="national-Code-lable" for="national-Code">کد ملی خریدار</label>
+                    </div>
+
+                    <div class="national-Code-none">
+                        <input class="national-Code-none-checked" type="checkbox">
+                        <span>تبعه خارجی هستم، کد ملی ندارم</span>
+                    </div>
+                </div>
+
+                <div class="receiver-info">
+                    <h1 class="receiver-info-title">اطلاعات تحویل گیرنده</h1>
+
+                    <div class="receiver-name">
+                        <input class="receiver-name-input" type="text" required>
+                        <label class="receiver-name-label">نام و نام‌خانوادگی تحویل گیرنده</label>
+                    </div>
+
+                    <div class="receiver-phone">
+                        <input class="receiver-phone-input" type="text" required>
+                        <label class="receiver-phone-label">تلفن همراه</label>
+                    </div>
+
+                    <div class="receiver-address">
+                        <input class="receiver-address-input" type="text" required>
+                        <label class="receiver-address-label">آدرس پستی</label>
+                    </div>
+
+                    <div class="receiver-info-btn">
+                        <a href="cart-address.html">انصراف</a>
+                        <button type="submit">ثبت اطلاعات و بازگشت</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <main>
+        <div class="cart-level-container">
+            <a class="cart-level-one cart-level-active">
+                <div class="cart-level-image">
+                    <img src="assets/image/cart-l1.svg">
+                </div>
+                <div class="cart-level-text">
+                    <span>سبد خرید</span>
+                </div>
+            </a>
+
+            <a class="cart-level-two cart-level-active">
+                <div class="cart-level-image">
+                    <img src="assets/image/cart-l2.svg">
+                </div>
+                <div class="cart-level-text">
+                    <span>اطلاعات ارسال</span>
+                </div>
+            </a>
+
+            <a class="cart-level-three">
+                <div class="cart-level-image">
+                    <img src="assets/image/cart-l3.svg">
+                </div>
+                <div class="cart-level-text">
+                    <span> اطلاعات پرداخت</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="add-adress">
+            <img src="assets/image/address-logo.svg">
+            <h1>شما هیچ آدرسی ثبت نکرده‌اید!</h1>
+            <span class="btn-add-address">افزودن آدرس جدید</span>
+        </div>
+
+        <div class="view-address">
+            <div class="view-address-title">
+                <h1>مکان و زمان تحویل سفارش</h1>
+                <p class="change-address-btn">تغییر آدرس</p>
+                <p class="add-address-btn">افزودن آدرس</p>
+            </div>
+
+            <div class="view-address-info">
+                <h1>سفارش شما به آدرس زیر ارسال می‌شود :</h1>
+
+                <div class="view-address-info-details">
+                    <div class="view-address-info-box">
+                        <span class="view-address-info-name">علیرضا قربانی</span>
+                        <span class="view-address-info-label">آدرس : </span>
+                        <span class="view-address-info-post">آذربایجان‌غربی، ارومیه</span>
+                        <span class="view-address-info-phone-label">شماره تماس : </span>
+                        <span class="view-address-info-phone">123456789</span>
+                        <div class="view-address-info-btn">
+                            <span class="material-icons view-address-info-btn-edite">create</span>
+                            <span class="material-icons view-address-info-btn-delete">close</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-address-date">
+                <h1 class="view-address-date-title">
+                    لطفا بازه زمانی مناسب برای تحویل سفارش را انتخاب کنید:
+                </h1>
+
+                <div class="view-address-date-detail">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>یک‌شنبه  11 مهر 1400</td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 9-12 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 12-15 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 15-18 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 18-21 رایگان
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>دوشنبه  12 مهر 1400</td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 9-12 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 12-15 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 15-18 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 18-21 رایگان
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>سه‌شنبه  13 مهر 1400</td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 9-12 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 12-15 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 15-18 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 18-21 رایگان
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>چهارشنبه  14 مهر 1400</td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 9-12 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 12-15 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 15-18 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 18-21 رایگان
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>پنجشنبه  15 مهر 1400</td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 9-12 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 12-15 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 15-18 رایگان
+                                </td>
+                                <td>
+                                    <input name="day" type="radio">
+                                    ساعت 18-21 رایگان
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="view-address-footer">
+                <div class="view-address-footer-label">
+                    <span>آیا مایل هستید به همراه این سفارش فاکتور ارسال شود؟</span>
+                    <input type="radio" name="factor" value="ok">
+                    <label>بله</label>
+
+                    <input type="radio" name="factor" value="no">
+                    <label>خیر</label>
+                </div>
+                <a href="cart-payment.html" class="view-address-footer-btn">ثبت و مرحله بعد</a>
+            </div>
+        </div>
+
+        <div class="cart-addres-policy">
+            <div class="cart-payment-return">
+                <img src="assets/image/return.svg">
+                <span>ضمانت 14 روز بازگشت کالا</span>
+            </div>
+            
+            <div class="cart-payment-delivery">
+                <img src="assets/image/delivery.svg">
+                <span>تحویل سریع و آسان</span>
+                
+            </div>
+            
+            <div class="cart-payment-origin">
+                <img src="assets/image/origin.svg">
+                <span>ضمانت اصل بودن کالا</span>
+
+            </div>
+        </div>
+
+    </main>
+
+    <div class="copy-right">
+        <span>کلیه حقوق این سایت متعلق به شرکت ..... است</span>
+    </div>
+    
+    <!-- jquery -->
+    <script src="assets/script/jquery-3.6.0.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit-icons.min.js"></script> 
+    
+    <!-- custom script -->
+    <!-- <script src="assets/script/script.js"></script> -->
+
+    <script>
+
+        $(document).ready(function() {
+            $('.btn-add-address').click(function() {
+              $('.submit-address').addClass('show-submit-address')
+            });
+
+            $('.submit-address').click(function() {
+              $('.submit-address').removeClass('show-submit-address')
+            });
+
+            $('.submit-address').children().click(function(e) {
+                e.stopPropagation();
+            });
+
+            $('.close-submit-address').click(function() {
+                $('.submit-address').removeClass('show-submit-address')
+            });
+
+            // set national-Code-none
+            // $('.national-Code-none-checked').click(function() {
+            //     $(".national-Code-container").toggle(this.checked);
+            // });
+
+
+            // show add-address-btn
+            $('.change-address-btn').click(function() {
+                $('.add-address-btn').addClass('show-add-address-btn');
+                $('.change-address-btn').addClass('hide-change-address-btn');
+
+            });
+
+            $('.add-address-btn').click(function() {
+                $('.submit-address').addClass('show-submit-address');
+            });
+
+            
+            $('.view-address-info-btn-edite').click(function() {
+                $('.submit-address').addClass('show-submit-address');
+            });
+
+            $('.view-address-info-btn-delete').click(function() {
+                $('.view-address-info-box').remove();
+            });
+            
+
+        });
+     
+
+
+      
+    
+
+      
+    </script>
+</body>
+</html>

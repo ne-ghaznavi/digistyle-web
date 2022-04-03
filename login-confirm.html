@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود/ثبت نام | فروشگاه اینترنتی لباس دیجی استایل</title>
+    <link rel="icon" href="assets/image/Favicon.png"/>
+
+    <!-- google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- suctom style -->
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/login.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
+
+    <style>
+        form {
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="">
+        <a href="index.html"><img src="assets/image/logo.svg"></a>
+    </header>
+
+    <main>
+        <h1>ورود با شماره موبایل</h1>
+
+        <div class="login-form-section">
+            <p>کد ارسال شده به شماره .......... را وارد کنید</p>
+            <form>
+                <div class="">
+                    <div class="login-form-input">
+                        <input class="login-form-input-input" type="text" required>
+                    </div>
+                </div>
+    
+                <button class="login-btn" type="submit" disabled>ورود</button>
+            </form>
+    
+        </div>
+    </main>
+    
+
+    
+    <!-- jquery -->
+    <script src="assets/script/jquery-3.6.0.min.js"></script>
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit-icons.min.js"></script> 
+    
+    <!-- custom script -->
+    <!-- <script src="assets/script/script.js"></script> -->
+
+    <script>
+        $(document).ready(function() {
+                   $('.login-form-input-input').keyup(function() {
+                       let inputValue = $('.login-form-input-input').val();
+                       console.log(inputValue);
+
+                       if (inputValue.length > 11) {
+                           $('.login-btn').removeAttr('disabled');
+                           $('.login-btn').addClass('login-btn-active');
+                       } else {
+                           $('.login-btn').removeClass('login-btn-active');
+                           $('.login-btn').attr('disabled', 'disabled');
+
+                       }
+                   });
+               });
+    </script>
+</body>
+</html>
