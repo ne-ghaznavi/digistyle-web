@@ -1,18 +1,20 @@
 # digistyle
-[Online store template](http://www.nematghaznavi.ir)
+
+[Online store template](http://digistyleweb.nematghaznavi.ir/)
 
 ## About :
-This is an sample tool with bash script for analyze web application and detect some security vulnerabilities on them. This tool can detect this Vulnerabilities and hove this options:
 
-1. XmlRPC.php file attacks
-2. CrossDomain.xml file attacks
-3. HTTP Methods based attacks
-4. WAF Detection
-5. Information Gathering
-6. Directory Crawling
-7. Subdomain Enumeration
-8. CORS Misconfiguration Vulnerability
-9. Host Header Injection Vulnerability
-10. ClickJacking Vulnerability
+Online clothing store template includes:
 
-Enjoy :)
+1. landing page
+2. Login form
+3. Cart page
+
+## Technologies used :
+
+1. Html5
+2. css3
+3. jquery
+4. UIKit
+
+   Enjoy :)
